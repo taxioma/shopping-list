@@ -1,0 +1,7 @@
+<div class="main-block" >
+  <p>main works!</p>
+  <button type="button" class="btn cursor-pointer" (click)="addList()">Add list</button>
+  @for (list of (lists$ | async); track $index) {
+    {{list.id}}
+  }
+</div>
